@@ -1,0 +1,1298 @@
+/** Globals  **/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+*, *:before, *:after{
+
+    box-sizing: inherit;
+
+}
+
+html,
+body {
+
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body{
+   
+    background-color: rgb(254, 252, 247); 
+/*  Die Body Masse für eine klare Richtlinie innerhalb aller Browser Versionen */
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+/*  Variablen  */
+
+$Fraunches: 'Fraunces', serif;
+
+/*  General Text  */
+
+.text-general{
+
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 150%;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+
+}
+
+       
+/*  Desktop Design  */
+
+/*  Title Elements  */
+
+.wrapper{
+
+    position: relative;
+    width: 90%;
+    margin: 5%;
+    margin-bottom: 0%;
+    border: 1px black solid;
+
+}
+
+
+
+.nav{
+   
+        position: relative;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+       
+        
+
+    &__logo{
+
+        position: relative;
+        display: inline-block;
+        width: 40vw;
+    }
+
+    &__flex{
+    
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;  
+        width: 75%;
+
+    }
+
+
+    &__text{
+
+        display: inline-block;
+        font-size: 12px;    
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        color: rgb(131, 136, 143);
+        letter-spacing: 1.5px;
+
+    }
+
+    &__text:nth-child(2){
+
+        margin: 0 5%;
+    }
+
+    &__hamburger{
+
+        position: relative;
+        display: none;
+        transform: scale(2);
+        top: 2vh;
+        right: 5%;
+        
+    }
+
+    &__close{
+
+        position: relative;
+        display: none;
+        transform: scale(2);
+        top: 2vh;
+        right: 5%;
+        
+    }
+
+}
+
+.front{
+
+    position: relative;
+    
+    background-image:url(./images/desktop/image-hero-coffeepress.jpg);
+    border-radius: 15px;
+    background-size: cover !important;
+    
+    background-position: center !important;
+    height: 75vh;
+    
+    width: 100%;
+    margin-top: 7vh;
+    display: flex;
+    align-items: center;
+
+    &__flex--menu{
+        
+        display: none;
+       
+    }
+
+
+    &__flex{
+
+        position: relative;
+        width: 100%;
+        margin-left: 8%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    &__title{
+
+        font-family: $Fraunches;
+        font-size: 70px;
+        font-weight: 900;
+        color: white;
+
+    }
+
+    &__description{
+
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 150%;
+        margin-top: 2vh;
+        color: white;
+        width: 40%;
+    }
+
+    &__btn{
+
+        width: 150px;
+        margin-top: 5vh;   
+        
+        color: white;
+        background-color: rgb(14, 135, 132);
+        font-family: $Fraunches;
+        font-weight: 600;
+        font-size: 18px;
+       
+        border-radius: 7px;
+        text-align: center;
+        padding: 15px;
+
+        text-decoration: none;
+        
+    }
+
+}
+
+.collection{
+
+    position: relative;
+    margin-top: 15vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    &__title{
+
+        position: relative;
+        font-family: $Fraunches;
+        text-align: center;
+        font-size: 124px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgb(143, 142, 142), white 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+
+    }
+
+
+    &__items{
+
+        position: relative;
+        
+        top: -11vh;
+        width: 80%;
+
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+
+
+    &__item{
+
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        width: max-content;
+
+        margin: 25px;
+
+
+        &--picture{
+
+            position: relative;
+            height: 15vh;
+
+        }
+
+        &--title{
+
+            position: relative;
+            margin-top: 2vh;
+            height: 8vh;
+            top: 1vh;
+            font-family: $Fraunches;
+            font-size: 16px;
+            text-align: center;
+            
+        }
+
+        &--text{
+
+            position: relative;
+            height: 10vh;
+            top: 1vh;
+            color: rgb(0, 0, 0);
+
+        }
+    }
+
+
+}
+
+
+.offering{
+
+    position: relative;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__background{
+
+    
+        position: absolute;
+        background-color: rgb(51, 61, 75);
+        width: 100%;
+        height: 50vh;
+        margin-top: 0vh;
+        border-radius: 15px; 
+        
+    }
+        
+
+    &__item{
+
+        position: relative;
+        display: block;
+        width: 45%;
+        margin-top: 5vh;
+        
+    }
+
+    &__title{
+
+        font-family: $Fraunches;
+        color: white;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        
+        
+    }
+
+    &__description{
+
+        display: block; 
+        color: rgb(255, 255, 255);
+        
+
+    }
+
+    &__assets{
+
+        position: relative;
+        width: 80%;
+        margin-top: 5vh;
+       
+        display: flex;
+        justify-content: space-between;
+        
+    
+    }
+
+    &__assetsitem{
+
+        position: relative;
+        width: 30%;
+        background-color: rgb(14, 135, 132);
+        border-radius: 15px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+
+    &__tablet{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__assetsitem:nth-child(3){
+
+        padding-top: 22px;
+
+    }
+
+    &__asset-picture{
+
+        position: relative;
+        margin-top: 7vh;
+    
+    }
+
+    &__asset-title{
+
+        position: relative;
+        text-align: center;
+        color: white;
+        font-family: $Fraunches;
+        margin-top: 5vh;
+        height: 40px;
+
+    }
+
+    &__asset-description{
+
+        position: relative;
+        width: 60%;
+        
+        margin-top: 2vh;
+        margin-bottom: 5vh;  
+        color: white;
+
+    }
+
+}
+
+
+
+.workflow{
+
+        position: relative;
+        width: 80%;
+        left: 10%;
+        margin-top: 15vh;
+        
+
+    &__title{
+
+        position: relative;
+        width: 75%;
+        height: 100px;
+        border-bottom: 1px rgb(253, 214, 186) solid;
+
+    }
+
+    &__titletext{
+
+        display: inline-block;
+        position: relative;
+        font-family: $Fraunches;
+        font-size: 22px;
+        color: rgb(131, 136, 143);
+
+    }
+
+    &__circle{
+
+        position: absolute;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color:white;
+        border: 1px rgb(14, 135, 132) solid;
+        border-radius: 50%; 
+
+    }
+
+    &__circle--pos1{
+
+        top: calc(100px - 12.5px);
+        left: 0%;
+    }
+
+    &__circle--pos2{
+
+        top: calc(100px - 12.5px);
+        left: 50%;
+    }
+
+    &__circle--pos3{
+
+        top: calc(100px - 12.5px);
+        left: 100%;
+    }
+
+
+    &__item{
+
+        position: relative;
+        
+        left: 10%;
+        margin-top: 10vh;
+        width: 30%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    &__itemstep{
+
+        
+        position: relative;
+        font-family: $Fraunches;
+        height: 60px;
+        font-weight: 900;
+        font-size: 54px;
+        color: rgb(253, 214, 186);
+
+    }
+
+    &__itemtitle{
+
+       
+        position: relative;
+        font-family: $Fraunches;
+        height: 60px;
+        font-size: 24px;
+        margin: 4vh 0;
+        color: rgb(0, 0, 0);
+
+
+    }
+
+    &__itemdescription{
+
+        
+        color: rgb(0, 0, 0);
+        width: 80%;
+        margin-bottom: 4vh;
+        text-align: left;
+
+    }
+
+    &__btn{
+
+        position: relative;
+        display: block;
+        
+        text-decoration: none;
+        color: white;
+        background-color: rgb(14, 135, 132);
+        font-family: $Fraunches;
+        font-weight: 600;
+        font-size: 14px;
+        width: 150px;
+        
+        margin-top: 10vh;
+        border-radius: 7px;
+        text-align: center;
+        padding: 15px;
+            
+    }
+
+}
+
+    .disable{
+        
+        display: none;
+
+    }
+
+
+    .footer{
+
+        position: relative;
+        width: 100%;
+        margin-top: 10vh;
+    
+        padding: 25px 0px;
+        background-color: rgb(51, 61, 75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+        &__flex{
+    
+            position: relative;
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+    
+        }
+    
+        &__flex--text{
+    
+            position: relative;
+            display: inline-flex;
+            
+            width: 50%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+         
+    
+        }
+    
+        &__text{
+    
+            display: inline-block;
+            font-size: 12px;    
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+            color: rgb(131, 136, 143);
+            letter-spacing: 1.5px;
+    
+        }
+    
+        &__text:nth-child(2){
+    
+            padding: 0% 5%;
+    
+        }
+    
+    
+        &__flex--logos{
+    
+            position: relative;
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+    
+    
+        }
+    
+    }
+
+
+/*  Tablet Design  */
+
+@media (max-width: 960px){
+
+    .collection{
+
+        &__title{
+
+            font-size: 92px;
+
+        }
+
+    }
+
+}
+
+
+@media (max-width: 825px){
+
+    .footer{
+
+        &__flex{
+         
+            width: 90%;  
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    
+        }
+
+        &__logo{
+
+            width: 50%;
+        }
+    
+        &__flex--text{
+    
+           
+            width: 100%;
+            margin-top: 5vh;
+            flex-direction: row;
+            justify-content: center;
+            
+    
+        }
+    
+        &__flex--logos{
+    
+            width: 45%;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-around;
+    
+    
+        }
+    
+    }
+
+
+}
+
+@media (max-width: 757.9px){
+
+    .front{
+    
+        background-image:url(./images/tablet/image-hero-coffeepress_org.jpg);
+        
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        
+        &__title{
+
+            font-size: 60px;
+
+        }
+
+        &__description{
+
+            font-size: 16px;
+            width: 85%;
+        
+        }
+
+    }
+
+    .collection{
+
+        &__title{
+
+            font-size: 68px;
+
+        }
+
+        &__items{
+
+            top: -9vh;
+            width: 80%;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+        }
+
+        &__tablet{
+
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        &__item{
+
+            position: relative;
+
+            width: 100%;
+             
+            margin: 25px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+           
+            &--picture{
+    
+                position: relative;
+                display: inline-block;
+                height: 20vh;      
+                
+            }
+    
+            &--title{
+    
+                height: 4vh;
+                
+                top: -2vh;
+                
+                font-size: 16px;
+                text-align: left;
+                
+            }
+    
+            &--text{
+    
+                height: 8vh;
+                width: 70%;
+                
+                color: rgb(0, 0, 0);
+                text-align: left;
+    
+            }
+        }
+ 
+    }
+
+
+    .offering{
+
+        &__item{
+
+          width: 80%;
+          margin-top: 5vh;
+            
+        }
+    
+        &__assets{
+  
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        &__assetsitem{
+ 
+            width: 100%;
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        &__tablet{
+
+            display: inline-flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 80%;
+
+        }
+
+        &__assetsitem:nth-child(2){
+
+            
+            margin-bottom: 0vh;
+
+        }
+    
+        &__assetsitem:nth-child(3){
+
+            padding-top: 0px;
+
+        }
+
+
+        &__asset-picture{
+
+         
+          margin-top: 0%;
+          margin-left: 5%;
+              
+        }
+
+        &__asset-title{
+
+            width: 80%;
+
+
+        }
+
+        &__asset-description{
+
+            width: 80%;
+           
+        }
+
+    }
+    
+}
+
+
+
+/*  Mobile Design  */
+
+@media (max-width: 565px){
+
+
+    .nav{
+
+        position: relative;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 11111;
+        
+        &__logo{
+
+            position: relative;
+            display: inline-block;
+            
+        }
+
+        &__flex{
+            
+            display: none;
+        
+        }
+
+        &__hamburger{
+
+            display: block;
+
+        }
+
+        &__close{
+
+            display: none;
+
+        }
+    }
+
+ 
+    .front{
+
+        width: 100%;
+        margin-top: 7vh;
+      
+        display: inline-flex;
+        flex-direction: column;      
+        justify-content: center;
+
+        
+        &__flex{
+        
+            display: flex;
+             
+        }
+
+        &__flex--menu{
+
+            display: none;
+            box-shadow: 13px 10px 102px 130px rgba(255,255,255,1);
+            background-color: white;
+            position: relative;
+            width: 50%;
+            margin-top: -35vh;          
+            flex-wrap: wrap;
+
+        }
+
+        &__flex--text{
+
+            width: 100%;
+            background-color: white;
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-family: $Fraunches;
+            text-align: center;
+
+        }
+
+        &__flex--text:nth-child(2){
+
+            margin: 5vh 0;
+        }
+    }
+  
+}
+
+@media (max-width: 550px){
+
+        .line_break{
+
+            display: none;
+        }
+    
+        .workflow{
+ 
+            &__title{
+        
+                width: 100%;
+                height: 20px;
+                border-bottom: none;
+                text-align: center;
+
+            }
+
+            &__titletext{
+
+                font-size: 22px;          
+
+            }
+
+            &__circle{
+
+                display: none;
+            
+            }
+
+
+            &__item{
+
+                position: relative;               
+                left: 10%;
+                margin-top: 10vh;
+                width: 80%;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                
+            }
+
+        
+            &__itemstep{
+
+                position: relative;
+                height: 60px;     
+                font-size: 54px;
+                
+            }
+
+            &__itemtitle{
+
+                text-align: center;
+            
+                width: 100%;
+                font-size: 24px;
+                margin: 2vh 0;
+                
+            }
+
+
+            &__itemdescription{
+    
+                width: 70%;
+                margin-bottom: 4vh;
+                text-align: center;
+
+            }
+            
+            &__btn{
+
+                left: calc(50% - 90px);
+                
+            }
+
+        }
+
+    .enable{
+    
+        display: none;
+        
+    }
+
+    .disable{
+        
+        display: block;
+
+    }
+
+}
+
+@media (max-width: 515px){
+
+    .footer{
+       
+            &__flex--text{
+          
+                width: 85%;
+        
+            }
+        
+        }
+    
+
+}
+
+
+@media (max-width: 525px){
+
+    .collection{
+
+        &__title{
+
+            font-size: 42px;
+
+        }
+
+        &__items{
+               
+            top: -11vh;
+            width: 100%;
+        
+            display: flex;
+            justify-content: center;
+    
+        }
+        
+        &__item{
+    
+            display: inline-flex;
+            flex-direction: column;
+            margin: 0;
+            margin-top: 6vh;
+            width: 100%;
+            
+            &--picture{
+           
+                height: 20vh;
+                width: 50%;
+                left: 25%;
+               
+            }
+    
+            &--title{
+    
+                margin-top: 2vh;
+                height: 8vh;
+                top: 1vh;
+                
+                text-align: center;
+               
+            }
+    
+            &--text{
+    
+                width: 80%;
+                left: 10%;
+                text-align: center;
+               
+            }
+        }
+    }
+}
+
+@media (max-width: 463px){
+
+    .front{
+        
+        &__title{
+
+            font-size: 45px;
+
+        }
+
+        &__description{
+
+            font-size: 14px;
+           
+        
+        }
+
+    }
+
+}
+
+
+
+@media (max-width: 400px){
+
+    .offering{
+
+    
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        &__background{
+
+            height: 150vh;
+                       
+        }
+            
+
+        &__item{
+
+            
+            width: 75%;
+            margin-top: 7vh;
+            
+        }
+
+        &__title{
+
+            
+            font-size: 24px;
+            margin-top: 10vh;
+            
+            
+            
+        }
+
+
+        &__assets{
+
+            width: 80%;
+            margin-top: 5vh;
+                
+        }
+
+        &__assetsitem{
+
+          
+            width: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+        }
+
+        &__asset-picture{
+    
+            margin-top: 12vh;
+        
+        }
+
+        &__asset-title{
+   
+            margin-top: 5vh;
+            width: 100%;
+
+        }
+
+        &__asset-description{
+
+            width: 70%;
+            margin-top: 2vh;
+            margin-bottom: 10vh;  
+            color: white;
+
+        }
+
+    }
+
+    .footer{
+       
+        &__flex--text{
+      
+            width: 100%;
+    
+        }
+    
+    }
+}
+
+
+@media (max-width: 359.7px){
+ 
+
+
+
+    .front{
+        
+        background-image:url(./images/mobile/image-hero-coffeepress_neu.jpg);
+        background-size: cover;
+        height: 85vh;
+        width: 100%;
+        
+            &__title{
+
+                font-size: 40px;
+
+            }
+
+            &__description{
+
+                font-size: 12px;
+            
+            }
+
+            &__btn{
+
+                width: 150px;    
+                font-size: 18px;
+                    
+            }
+    }
+
+    .collection{
+
+         &__title{
+    
+            font-size: 32px;
+    
+        }
+
+        &__item{
+    
+            
+            margin-top: 7vh;
+            
+        }
+        
+        &__item--picture{
+        
+           
+            height: 20vh;
+           
+                   
+        }
+
+    }
+
+}
+
+@media (max-width: 325px){
+
+    .footer{
+    
+        &__text{
+       
+            font-size: 3.5vw;
+            
+        }
+    
+      
+    
+    }
+
+
+}
+
