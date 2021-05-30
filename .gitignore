@@ -2,8 +2,7 @@
 #####################################################
 ## Please do not remove lines 5 and 6 - thanks! 🙂 ##
 #####################################################
-*.sketch
-*.fig
+*.sketch *.fig
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
@@ -16,3 +15,6 @@
 .prettierignore
 
 coffeeroasters-subscription-site-figma/
+
+.md
+*.md
