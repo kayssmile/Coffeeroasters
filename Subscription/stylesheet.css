@@ -43,7 +43,6 @@ body {
   width: 90%;
   margin: 5%;
   margin-bottom: 0%;
-  border: 1px black solid;
 }
 
 .nav {
@@ -106,6 +105,10 @@ body {
           transform: scale(2);
   top: 2vh;
   right: 5%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .front {
