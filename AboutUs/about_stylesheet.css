@@ -107,6 +107,10 @@ body {
   right: 5%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .front {
   position: relative;
   background-image: url(./images/desktop/image-hero-whitecup.jpg);
